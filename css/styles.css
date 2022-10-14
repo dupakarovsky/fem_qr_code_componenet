@@ -1,0 +1,127 @@
+/*
+/////////////////////////
+// GOOGLE FONTS: OutFit
+*/
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+/*
+//////////////////////////////////////
+// GENERAL RESET & CUSTOM PROPERTIES
+*/
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
+}
+:root {
+   /*  Fonts */
+   --ff-prim: "Outfit", sans-serif;
+   /* Font Weights */
+   --fw-reg: 400;
+   --fw-bold: 700;
+   /* Colors */
+   --white: 0, 0%, 100%; /* hsl(0, 0%, 100%) */
+   --lgray: 212, 45%, 89%; /* hsl(212, 45%, 89%) */
+   --gblue: 220, 15%, 55%; /* hsl( 220, 15%,55%) */
+   --dblur: 218, 44%, 22%; /* hsl(218,44%, 22%) */
+   /* Sizes */
+   --fs-reg: 1.5rem;
+}
+html {
+   scroll-behavior: smooth;
+   font-size: 62.5%;
+}
+body {
+   font-family: var(--ff-prim);
+   line-height: 1.5;
+   box-sizing: border-box;
+}
+img {
+   max-width: 100%;
+   display: block;
+}
+input,
+button,
+textarea,
+select {
+   font-family: inherit;
+}
+
+/*
+/////////////////////
+// LAYOUT
+*/
+.main {
+   width: 100%;
+   height: 100vh;
+   background-color: hsl(var(--lgray));
+}
+.flex {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+/*
+/////////////////////
+// UTILITY
+*/
+.mt--10 {
+   margin-top: 1rem;
+}
+.mt--15 {
+   margin-top: 1.5rem;
+}
+.mb--10 {
+   margin-bottom: 1rem;
+}
+.mb--15 {
+   margin-bottom: 1.5rem;
+}
+
+/*
+///////////////
+//  MAIN BLOCK
+*/
+.qr__body {
+   width: 35rem;
+   min-height: 54rem;
+   background-color: hsl(var(--white));
+   padding: 1.75rem;
+   border-radius: 2rem;
+}
+/*
+///////////////////
+// QR CONTENT BLOCK
+*/
+.qr__figure {
+   overflow: hidden;
+}
+
+/*
+///////////////////
+// QR FIGURE BLOCK
+*/
+.qr__image {
+   width: 100%;
+   border-radius: 1rem;
+}
+.qr__caption {
+   text-align: center;
+   padding-inline: 1.6rem;
+}
+
+/*
+////////////////////
+// QR CAPTION BLOCK
+*/
+.qr__caption--title {
+   font-size: 2.4rem;
+   font-weight: var(--fw-bold);
+}
+.qr__caption--text {
+   font-size: 1.6rem;
+   color: hsl(var(--gblue));
+   line-height: 1.4;
+}
